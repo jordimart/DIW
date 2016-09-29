@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jorge Marínez Frias">
+    <title>Ejercicio 2.4</title>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width:400px">
+            <legend>Datos básicos</legend>
+            Nombre<br>
+            <input type="text" name="nombre" size="40"><br>
+            <br> Descripción
+            <br>
+            <textarea name="descripcion" rows="4" cols="40" style="overflow-y:scroll"></textarea><br><br> Foto
+            <input type="file" size="60" name="file_1"><br><br>
+            <input type="checkbox" name="contador">Añadir contador de visitas
+        </fieldset>
+        <fieldset style="width:400px">
+            <legend>Datos económicos</legend>
+            <br> Precio
+            <input type="text" size="5"> € &nbsp&nbsp&nbsp&nbsp&nbspImpuestos <select>
+                                                    <option value="4%">4%</option>
+                                                    <option value="7%">7%</option>
+                                                    <option value="16%">16%</option>
+                                                    <option value="25%">25%</option>
+                                                </select>
+            <p>Promoción
+                <br>
+                <input type="radio" name="trans" value="Ninguno" checked> Ninguno<br>
+                <input type="radio" name="trans" value="Transporte gratuito"> Transporte gratuito<br>
+                <input type="radio" name="trans" value="Descuento 5%"> Descuento 5%
+            </p>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
