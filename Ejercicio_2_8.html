@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jorge Marínez Frias">
+    <title>Ejercicio 2.8-Ejemplo de elementos</title>
+</head>
+
+<body>
+    <h1>En este ejercicio probaremos distintas etiquetas y describiremos que vemos</h1>
+    <h2>Ejemplo "details" y "summary"</h2>
+    <details>
+        <summary>Copyright 1999-2014.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details>
+    <p><mark>Lo que podemos observar es que la información queda minimizada en una flecha
+       y podemos ampliarla al clicar en ella ,en esta se utilizan details y summary.Details
+       encapsula todo y en summary estara la referencia</mark></p>
+    <h2>Ejemplo de wbr</h2>
+    <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery
+        <wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+    <p><mark>Esta etiqueta indica al navegador en textos largos donde puede hacer un salto
+      de línea,para probar si funciona se debe abrir el ejercicio e ir reduciendo la pantalla,
+       observamos como intenta tener wbr en una linea</mark></p>
+    <h2>Ejemplo de bdi</h2>
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <p><mark>Remarca al navegador la direcionalidad de la palabra en caso de palabras de
+      lenguajes como el Árabe</mark></p>
+    <h2>Ejemplo de progress</h2> Downloading progress:
+    <progress value="22" max="100"></progress>
+    <p><mark>Esta etiqueta se utiliza para dibujar una barra de progreso, por ejemplo en una descarga</mark></p>
+    <h2>Ejemplo de meter</h2>
+    <p>Display a gauge:</p>
+    <meter value="10" min="0" max="20">10 out of 20</meter><br>
+    <meter value="0.8">80%</meter>
+    <p><mark>Esta etiqueta se utiliza para representar porcentages, no es igual que
+      la de progreso es mas para estadistica.</mark></p>
+    <h2>Ejemplo de time</h2>
+    <p>We open at <time>10:00</time> every morning.</p>
+
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+    <p><mark>Define una fecha u hora legible por los humanos. También se utiliza para
+      codificar fechas legibles para la máquina.</mark></p>
+    <h2>Ejemplo de mark</h2>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p><mark>Esta etiqueta se utiliza para remarcar un texto y restaltarlo</mark></p>
+</body>
+
+</html>
