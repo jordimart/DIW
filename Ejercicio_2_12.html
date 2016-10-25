@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jorge Marínez Frias">
+    <title>Ejercicio 2.12-Atributos srset y sizes</title>
+</head>
+
+<body>
+    <h1>Explicación</h1>
+    <p>Los atributos srcset, sizes, definidos originalmente para el elemento img, es la respuesta actual vencedora en la batalla para dotar al desarrollador de herramientas para el manejo de las imágenes en el escenario del responsive web design.</p>
+    <p>El valor del atributo srcset es una ruta a un recurso de imagen o un grupo de rutas separadas por comas. Cada valor de ruta y separado por un espacio en blanco puede ir acompañado de algún tipo de información o pista para que el navegador seleccione
+        la que mostrar en base al tamaño del viewport o la densidad del dispositivo.</p>
+    <p>Para mostrar imágenes en función del tamaño de la pantalla o ventana se utiliza el atributo sizes=''. Admite un valor sizes='100vw' o múltiples valores separados por comas.</p>
+    <br>
+    <h1>Ejemplo práctico</h1>
+    <img sizes="(min-width: 800px) 60vw, 100vw" srcset="img/imagen-1.jpg 200w,
+   img/imagen-2.jpg 400w,
+   img/imagen-3.jpg 800w,
+   img/imagen-4.jpg 1200w" src="img/imagen-4.jpg" alt="texto alternativo" />
+
+</body>
+
+</html>

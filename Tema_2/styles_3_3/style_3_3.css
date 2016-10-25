@@ -1,0 +1,22 @@
+
+/*descendecia y herencia*/
+
+p span { color: pink;
+        background-color: yellow;
+          }
+p > span { color: green;
+  background-color: red;
+            }
+
+/*selector adyacente*/
+h2 { color: green; }
+h1 + h2 { color: red }
+
+/*selector de atributo*/
+div[class] { color: orange; }
+
+a[href="http://www.ejemplo.com"] { color: green; }
+
+
+h3 {color:blue !important;}
+h3 {color:green;}

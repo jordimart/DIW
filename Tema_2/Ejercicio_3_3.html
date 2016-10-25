@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Jorge Marínez Frias">
+    <link rel="stylesheet" type="text/css" href="styles_3_3/style_3_3.css" />
+    <title>Ejercicio 3_3-Css selectores avanzados y herencia</title>
+
+</head>
+
+<body>
+    <h1>1-Ejemplo de selector adyacente</h1>
+
+    <h2>Este título esta justo detrás de h1 por lo tanto debe ser rojo</h2> ...
+
+    <h2>Este título ya no es adyacente por lo tanto debe ser color verde</h2>
+
+    <h1>2-Ejemplo selector descendiente</h1>
+    <p>
+        <span>Esto sería un ejemplo de selector avanzado, este texto esta dentro de un p y y a la vez dentro de una etiqueta span, al ser hijo directo
+    su color sera verde y con el fondo rojo.</span></p>
+    <p>
+
+        <a href="#"><span>En este caso debería tener el color rosa y fondo amarillo ya que el span esta dentro de un div pero no es herencia directa.</span></a>
+
+    </p>
+
+    <h1>3-Ejemplo de de selector de atributos</h1>
+    <div class>
+        Este selector avanzado se fija en que el div en el que esta colocado tiene el atributo class, las letras deben estar en naranja.
+    </div>
+    <div>
+        <p><a href="http://www.ejemplo.com">Este selector avanzado se fija en el href de la etiqueta a, si coincide pintara en verde</a></p>
+    </div>
+    <div>
+        <p><a href="#">En este caso elcontenido de href ya no coincide por lo tanto debe pintarse en azul que es el color de un link</a></p>
+    </div>
+
+    <div>
+        <h1>4-Ejemplo de important</h1>
+        <h3>Esto sería un ejemplo de !important, realemnte sería mas complicado ya que se utilizaría en casos concretos en los que quieras tener
+           una determinada caracteristica sí o
+          sí ya que aquí le hemos puesto un color diferente de letra a la etiqueta h3 pero observamos que aunque lo cambiemos de lugar prevalece
+          el color que tiene la opcion important.
+        </h3>
+
+    </div>
+
+
+</body>
+
+</html>

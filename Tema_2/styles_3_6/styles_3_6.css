@@ -1,0 +1,16 @@
+div {
+
+    border: solid ;
+    border-width:thick;;
+}
+
+#border-1 {border-style: none; }
+#border-2 {border-style: hidden;}
+#border-3{border-style: dotted;}
+#border-4{border-style: dashed;}
+#border-5 {border-style: solid;}
+#border-6{border-style: double;}
+#border-7 {border-style: groove;}
+#border-8{border-style: ridge;}
+#border-9{border-style: inset;}
+#border-10 {border-style: outset;}
