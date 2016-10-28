@@ -126,3 +126,16 @@ img { border: none; }
   margin-top: 1em;
   border: 1px dashed #C60;
 }
+
+#logo h1{
+  background-image: url("../img/logo.gif");
+  padding: 5px;
+  background-repeat: no-repeat;
+}
+h1 span {
+  visibility: hidden;
+}
+
+#menu{
+  background-image: url("../img/fondo_menu.gif");
+}

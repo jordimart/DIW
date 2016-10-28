@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Jorge Marínez Frias">
+    <title>Ejercicio 3_10</title>
+    <title>Ejercicio posicionamiento float</title>
+
+    <style type="text/css">
+        div#barra {
+            background-color: #E0E0E0;
+            /*color de fondo*/
+            padding: .5em;
+            /*margen interior*/
+            border: 1px solid #CCC;
+            /*borde*/
+        }
+
+        .siguiente {
+            float: right;
+            /*se posiciona la caja a la parte mas a la derecha*/
+        }
+
+        .anterior {
+            float: left;
+            /*se posiciona la caja a la parte mas a la izquiereda*/
+        }
+
+        div.clear {
+            clear: both;
+            /* hace que la caja sobre la que se aplica baje hasta que su borde superior
+            esté por debajo del borde inferior de cualquier elemento flotado a la
+            izquierda o a la derecha.*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="barra">
+        <span class="anterior">&laquo; Anterior</span> <span class="siguiente">Siguiente &raquo;</span>
+        <div class="clear"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Jorge Marínez Frias">
+    <title>Ejercicio 3_12</title>
+    <title>Ejercicio position relative</title>
+
+    <style type="text/css">
+        h1.izquierda {
+            /*le 10 pixeles de la relación relativa, con lo cual se sale 30 pixeles de la pantalla*/
+            position: relative;
+            left: -30px;
+        }
+
+        h1.derecha {
+            /*en este caso desplazamos 30 pixeles a la derecha de la posicion relativa*/
+            position: relative;
+            left: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is a heading with no position</h1>
+
+    <h1 class="izquierda">This heading is moved according to its normal position</h1>
+
+    <h1 class="derecha">This heading is moved according to its normal position</h1>
+
+</body>
+
+</html>
