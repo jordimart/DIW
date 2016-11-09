@@ -1,0 +1,26 @@
+
+ul.selectores {/*afecta a la clase que este dentro de ul*/
+
+  border: 1px solid #7C7C7C;/*aplicamos un borde a a todo el ul*/
+  list-style: none;/*quito los circulo del listar*/
+  margin: 0;
+  padding: 0;
+  width: 160px;/*ancho del recuadro*/
+}
+ul.selectores li {/*estos parametros son para los li que esten dentro de ul con clase selectores*/
+  background: #F4F4F4;/*color de fondo de cada elemento lista*/
+  border-bottom: 1px solid #7C7C7C;/*Borde de la parte inferior de los elementos lista*/
+
+}
+
+ul.selectores li a {
+  color: #333;/*Color de la letra */
+  display: block;/*muestra como un bloque cada link*/
+  padding: .2em 0 .2em 1.6em;/*colocamos las letras dentro del li*/
+  text-decoration: none;/*quitamos la barra del de la etiqueta link*/
+  background: #F4F4F4 url("../img/flecha_inactiva.png") no-repeat 3px;/*Añadimos lasflecha inactiva*/
+}
+
+ul.selectores li a:hover, ul.selectores li a:active {/*aqui le indicamos que al pasar por estos elementos ejecute un cambio*/
+	background: #E4E4E4 url("../img/flecha_activa.png") no-repeat 3px;/*cambiamos la flecha a activa,cambiando la imagen*/
+}
