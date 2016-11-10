@@ -1,0 +1,142 @@
+body {
+  font: 13px/1.6 Tahoma, sans-serif;
+  background: #F5F5F5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  background: #FFF;
+  border: 1px solid silver;
+  margin: 1em auto;
+  padding: 1em;
+  width: 1500px;
+}
+
+span.requerido {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #C00;
+}
+
+h2 {
+  font: normal 2em arial, sans-serif;
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
+#apellido1, #apellido2, #direccion, #email {
+  width: 250px;
+}
+
+#codigopostal {
+  width: 60px;
+  margin-right: 40px;
+}
+
+#provincia {
+  width: 60px;
+  margin-right: 40px;
+}
+
+#pais {
+  width: 180px;
+}
+
+#telefonofijo, #telefonomovil {
+  width: 135px;
+  margin-right: 100px;
+}
+
+#alta {
+  float: right;
+}
+
+ul li {
+  margin: 0.5em 0;
+  padding: 0.8em;
+  width: 48%;
+  position: relative;
+}
+
+ul li div span {
+  float: left;
+  padding: 0.3em 0;
+}
+
+ul li div span label {
+  display: block;
+  font: normal 0.8em arial, sans-serif;
+  color: #333;
+}
+
+ul li p.ayuda {
+  display: none;
+}
+
+ul li input {
+  padding: 0.2em;
+}
+
+ul li:hover {
+  background-color: #FF9;
+}
+
+ul li input:focus {
+  border: 2px solid #E6B700;
+}
+
+ul li.izquierda, ul li.derecha {
+  float: none;
+  width: auto;
+}
+
+ul li label.titulo {
+  font-weight: bold;
+  float: left;
+  width: 100px;
+  text-align: right;
+}
+
+ul li.line{
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 1em;
+}
+
+ul li div {
+  margin-left: 120px;
+  overflow: hidden;
+}
+
+ul li:hover p.ayuda {
+  display: block;
+  margin: 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+}
+ input:required:valid{
+ border:2px solid green;
+
+}
+
+ input:focus:required:invalid{
+ border:2px solid red;
+ background-color:#FF9;
+}
+
+select:required:valid{
+border:2px solid green;
+
+}
+
+select:focus:required:invalid{
+border:2px solid red;
+
+}

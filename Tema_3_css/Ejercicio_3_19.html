@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles_3_19/styles_3_19.css" title="style" />
+    <title>Ejercicio formulario</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h2>Formulario de alta</h2>
+        <form method="post" action="http://drspeg.jomuoru.net/showData.php">
+            <ul>
+                <li class="line">
+                    <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
+                    <div>
+                        <ul>
+                            <li> <span>
+      <input id="nombre" name="nombre" value="" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required/>
+      <label for="nombre">Nombre</label>
+    </span></li>
+                            <li> <span>
+      <input id="apellido1" name="apellido1" value="" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required/>
+      <label for="apellido1">Primer apellido</label>
+    </span></li>
+                            <li> <span>
+      <input id="apellido2" name="apellido2" value="" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required/>
+      <label for="apellido2">Segundo apellido</label>
+    </span></li>
+                            <ul>
+                    </div>
+                    <p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
+                </li>
+
+
+                <li class="line">
+
+                    <label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label>
+                    <div>
+                        <ul>
+                            <li> <span>
+      <input id="direccion" name="direccion" value="" required/>
+      <label for="direccion">Calle, número, piso, puerta</label>
+    </span></li>
+                            <li> <span>
+      <input id="codigopostal" name="codigopostal" value="" pattern="^([0-9]{5})$" required/>
+      <label for="codigopostal">Código postal</label>
+    </span>
+                                <span>
+      <input id="municipio" name="municipio" value="" required/>
+      <label for="municipio">Municipio</label>
+    </span></li>
+                            <li>
+                                <span>
+      <select id="provincia" name="provincia" required>
+        <option value=""></option>
+        <option value="provincia1">Provincia 1</option>
+        <option value="provincia2">Provincia 2</option>
+        <option value="provincia3">Provincia 3</option>
+      </select>
+      <label for="provincia">Provincia</label>
+    </span>
+                                <span>
+      <select id="pais" name="pais" required>
+        <option value=""></option>
+        <option value="pais1">País 1</option>
+        <option value="pais2">País 2</option>
+        <option value="pais3">País 3</option>
+      </select>
+      <label for="pais">País</label>
+    </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
+                </li>
+
+                <li class="line">
+                    <label class="titulo" for="email">Email</label>
+                    <div>
+                        <span>
+      <input id="email" name="email" value="" type="email" pattern="^([a-zA-Z0-9_-.]+)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(]?)$" required/>
+    </span>
+                    </div>
+                    <p class="ayuda">Asegúrate de que sea valido</p>
+                </li>
+                <li class="line">
+                    <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
+                    <div>
+                        <span>
+      <input id="telefonofijo" name="telefonofijo" value="" required/>
+      <label for="telefonofijo">Fijo</label>
+    </span>
+                        <span>
+      <input id="telefonomovil" name="telefonomovil" value="" required/>
+      <label for="telefonomovil">Móvil</label>
+    </span>
+                    </div>
+                    <p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
+                </li>
+                <li class="line">
+                    <input id="alta" type="submit" value="Darme de alta &rarr;" />
+                </li>
+                </ul>
+        </form>
+    </div>
+</body>
+
+</html>
+</ul>
+</form>
+</div>
+</body>
+
+</html>
