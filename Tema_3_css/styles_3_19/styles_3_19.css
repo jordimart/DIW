@@ -120,6 +120,7 @@ ul li:hover p.ayuda {
   top: 0;
   right: 0;
   width: 120px;
+
 }
  input:required:valid{
  border:2px solid green;
