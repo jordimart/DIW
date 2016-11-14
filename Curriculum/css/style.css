@@ -6,6 +6,7 @@ body {
     font-family: Georgia;
     color: #444;
     background: #999999;
+    font-weight: bold;
 
 
 }
@@ -19,6 +20,7 @@ body {
     -webkit-flex-flow: row;
     flex-flow: row;
 }
+
 
 #main>article {
     margin: 4px;
@@ -81,11 +83,28 @@ footer{
 
 }
 
+.lista ul
+{
+   padding-right: 0px;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   margin: 0px;
+}
+.lista li
+{
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+}
+
 #datos_personales{
   float:right;;
-  margin-right: 40%;
+  margin-right: 60%;
   font-size: 100%;
   color: black;
+  font-size: 120%;
+  font-family: Courier;
 }
 #datos_personales a{
   color:black;
@@ -147,10 +166,10 @@ color: #fff;
 }
 
 .indice:hover{
-background-color: #db5741;
+background-color: #E1F5A9;
 }
 
-/*Formulario decontacto*/
+/*Formulario decontacto ccs3*/
 
 .contacto{
     border: 1px solid #CED5D7;
@@ -205,6 +224,7 @@ input:required:valid{
 
 }
 
+/*pintamos la seccion al apuntar encima*/
 section.green:hover {
   background-color: #E1F5A9;
 }
