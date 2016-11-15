@@ -46,25 +46,15 @@ body {
     order: 1;
 }
 
-/*header{
-    background: #999999;
-  	color: white;
-  	height: auto;
-  	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-  	left: 0; /* Posicionamos la cabecera al lado izquierdo */
-  	top: 0; /* Posicionamos la cabecera pegada arriba */
-  	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
-}*/
 
-header{
-  display: block;
-  margin: 2px;
-  padding: 5px;
-  border-radius: 5pt;
-  background: #999999;
+ span{
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center !important;
+  
 }
 
-footer{
+footer,header{
   display: block;
   margin: 2px;
   padding: 5px;
@@ -83,31 +73,18 @@ footer{
 
 }
 
-.lista ul
-{
-   padding-right: 0px;
-   padding-left: 0px;
-   padding-bottom: 0px;
-   padding-top: 0px;
-   margin: 0px;
-}
-.lista li
-{
-   list-style-type: none;
-   display: inline;
-   padding-right: 5px;
-}
-
 #datos_personales{
-  float:right;;
-  margin-right: 60%;
-  font-size: 100%;
-  color: black;
-  
-  font-family: Courier;
+
+  margin-left: 30px;
+  font-size: 120%;
+
 }
 #datos_personales a{
-  color:black;
+  color:#444;
+}
+#data{
+  float:right;
+  margin-right: 40px;
 }
 
 ul{
