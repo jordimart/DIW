@@ -1,0 +1,32 @@
+header{
+    margin: 20px;
+    background-color: #f3f3f3;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 90%;
+    padding: 20px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+section{
+  margin: 20px;
+  border: 2px #A4A4A4 solid;
+  padding: 10px;
+}
+
+.des-x{
+    width: 110px;
+    height: 110px;
+    border: thin solid black;
+    overflow-x: hidden;
+}
+
+.des-y{
+    width: 700px;
+    height: 30px;
+    border: thin solid black;
+    overflow-y: hidden;
+
+}
