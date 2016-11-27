@@ -8,11 +8,11 @@ header{
 }
 
 #lista_1 li:nth-child(2) {
-    background: yellow;
+    background: #FACC2E;
 }
 #lista_2 li:nth-child(odd) {
-    background: yellow;
+    background: #FACC2E;
 }
 #lista_3 li:nth-child(3n+0) {
-    background: yellow;
+    background: #FACC2E;
 }
