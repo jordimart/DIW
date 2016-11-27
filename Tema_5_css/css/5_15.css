@@ -1,0 +1,41 @@
+header{
+    margin: 20px;
+    background-color: #f3f3f3;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 90%;
+    padding: 20px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+section{
+  margin: 20px;
+  border: 2px #A4A4A4 solid;
+  padding: 10px;
+}
+
+.back-origin{
+      border: 10px solid #424242;
+      padding: 35px;
+      background: url(../img/contacto.jpg);
+      background-repeat: no-repeat;
+      background-origin: content-box;
+}
+
+.back-clip{
+      border: 10px solid #424242;
+      padding: 35px;
+      background: url(../img/contacto.jpg);
+      background-clip: content-box;
+}
+
+.back-size{
+      padding: 35px;
+      border: 10px solid #424242;
+      background: url(../img/contacto.jpg);
+      background-size: 80px 60px;
+      background-repeat: no-repeat;
+      padding-top: 40px;
+}
