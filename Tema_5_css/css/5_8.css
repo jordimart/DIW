@@ -1,0 +1,34 @@
+header{
+    margin: 20px;
+    background-color: #f3f3f3;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 90%;
+    padding: 20px;
+}
+
+div.content-box {
+    width: 300px;
+    border: 1em solid;
+}
+
+div.c-box {
+    box-sizing: content-box;
+    width: 150px;
+    border: 3px solid coral;
+    float: left;
+    padding: 10px;
+}
+
+div.border-box {
+    width: 300px;
+    border: 1em solid;
+}
+
+div.b-box {
+    box-sizing: border-box;
+    width: 150px;
+    border: 3px solid coral;
+    float: left;
+    padding: 10px;
+}

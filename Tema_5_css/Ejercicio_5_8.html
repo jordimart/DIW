@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Ejercicio_5_8_css">
+    <meta name="author" content="Jorge Martínez Frias">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
+    <title>Ejercicio 5_8_diferencias_entre_content-box_border-box</title>
+    <link rel="stylesheet" type="text/css" href="css/5_8.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Ejercicio 5_8 Diferencias entre content-box y border-box</h1>
+        <p>Realiza un example amb content-box i border-box on s'observen les diferencies de fer servir un o altre.</p>
+    </header>
+    <section id="caja-1">
+        <h2>Ejemplo de cajas con content-box</h2>
+        <p>Este es el comportamiento del 'width' y el 'height' como se especifica en CSS2.1 (modelo estándar). El 'padding' y el 'border' del elemento se dibujan por fuera de la anchura y altura especificadas (se suman).</p>
+        <div class="content-box">
+            <div class="c-box">Ejemplo caja 1 con content-box</div>
+            <div class="c-box">Ejemplo de caja 2 con content-box</div>
+            <div style="clear:both;"></div>
+        </div>
+
+    </section>
+
+    <section id="caja-2">
+        <h2>Ejemplo de cajas con border-box</h2>
+        <p>El relleno y el borde se dibujan dentro del ancho y alto. Esto es, al calcular el tamaño final de la caja, el 'padding' y el 'border' se restan del 'height' y el 'width'.</p>
+        <div class="border-box">
+            <div class="b-box">Ejemplo caja 1 con border-box</div>
+            <div class="b-box">Ejemplo caja 2 con border-box</div>
+            <div style="clear:both;"></div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
