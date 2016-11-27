@@ -1,0 +1,27 @@
+li {
+  list-style: none;
+}
+
+li a{
+padding: .2em 5em 2em;
+display: block;
+text-decoration:none;
+}
+
+li a[href*='mailto']{
+  background:  url("../img/contacto.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+li a[href*='pdf']{
+  background:  url("../img/pdf.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+li a[href*='zip']{
+  background:  url("../img/zip.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
