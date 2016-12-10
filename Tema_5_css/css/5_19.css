@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+header{
+    margin: 20px;
+    background-color: #f3f3f3;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 90%;
+    padding: 20px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+header h1.title-header{
+  color:#013ADF;
+  text-shadow:27px 16px 3px #5374c9;
+  font-family: 'Indie Flower', cursive;
+  font-size: 150%;
+}
+
+header p{
+  font-family: 'Indie Flower', cursive;
+  font-size: 150%;
+}
+
+body{
+  font-family: Courier,Verdana, Sans-serif;
+}
+
+section{
+  margin: 30px;
+  border: 2px #A4A4A4 solid;
+  padding: 10px;
+  width: 90%;
+}
+
+.img{
+  /*visibility: hidden;*/
+  height:80px;
+  width: 80px;
+}
+
+/*estilo general de los botones*/
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*estilo propio de cada botón*/
+.button1 {background-color: #4CAF50;}
+.button2 {background-color: #008CBA;}
+.button3 {background-color: #f44336;}
+
+/*Aplicación de animaciones sobre cajas*/
+
+/*Parámetros de la animación en el header*/
+header{
+  animation-name: cambiacolor;/*esta es la animacion que se aplica*/
+  animation-duration: 8s;/*el tiempo que tarda en hacer la animcación*/
+  animation-iteration-count: infinite;/*las veces que se repetirá la animcación*/
+}
+
+/*parámetros para el párrafo de la introducción*/
+#introduction p {
+  animation-duration: 3s;
+  animation-name: deslizapalabras;/*aplicamos la animación a este párrafo*/
+
+}
+
+/*Con -webkit-perspective definimos el movimiento del elemento en 3D en el eje Z*/
+#ejemplo-1{
+  margin: 20px auto;
+   -webkit-perspective: 1000px;
+}
+
+/*parámetros para la caja girando*/
+#girando {
+    text-align: center;
+    background-color: #F7819F;
+   -webkit-animation-name: rotacion3d;/*aplico la animación*/
+   -webkit-animation-timing-function: linear;/*la animación se mueve de forma lineal*/
+   -webkit-animation-iteration-count: infinite;/*se ejecuta infinitas veces*/
+   -webkit-animation-duration: 5s;/*duración*/
+   -webkit-transform-style: preserve-3d;/*se renderiza en 3d*/
+}
+
+.pullDown{
+	animation-name: pullDown;/*aplico la animación*/
+	-webkit-animation-name: pullDown;/*compatibilidad con safari*/
+
+	animation-duration: 1.1s;/*duración*/
+	-webkit-animation-duration: 1.1s;
+
+	animation-timing-function: ease-out;/*especifico como avanzo en cada ciclo*/
+	-webkit-animation-timing-function: ease-out;
+
+	transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+
+  
+  animation-delay: 1s
+
+}
+
+.stretchLeft{
+	animation-name: stretchLeft;/*aplico la animación*/
+	-webkit-animation-name: stretchLeft;/*compatibilidad con safari*/
+
+	animation-duration: 1.5s;/*duración*/
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-out;/*especifico como avanzo en cada ciclo*/
+	-webkit-animation-timing-function: ease-out;
+
+	transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	-webkit-transform-origin: 100% 0%;
+
+  animation-delay: 2s
+
+}
+
+.stretchRight{
+	animation-name: stretchRight;/*aplico la animación*/
+	-webkit-animation-name: stretchRight;/*compatibilidad con safari*/
+
+	animation-duration: 1.5s;/*duración*/
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-out;/*especifico como avanzo en cada ciclo*/
+	-webkit-animation-timing-function: ease-out;
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%;
+
+
+
+}
+
+.slideLeft{
+	animation-name: slideLeft;/*aplico la animación*/
+	-webkit-animation-name: slideLeft;/*compatibilidad con safari*/
+
+	animation-duration: 1s;/*duración*/
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;/*especifico como avanzo en cada ciclo*/
+	-webkit-animation-timing-function: ease-in-out;
+
+
+  animation-delay: 3s
+
+}
+
+
+/*parámteros de animación pulse*/
+.pulse{
+	animation-name: pulse;/*aplicamos al animacion*/
+	-webkit-animation-name: pulse;/*compatibilidad con safari*/
+
+	animation-duration: 1.5s;/*duración de la animación*/
+	-webkit-animation-duration: 1.5s;/*compatibilidad con safari*/
+
+	animation-iteration-count: infinite;/*las veces que se repite*/
+	-webkit-animation-iteration-count: infinite;/*compatibilidad con safari*/
+}
+
+/*parámteros de animación floating*/
+.floating{
+	animation-name: floating;/*aplicamos al animacion*/
+	-webkit-animation-name: floating;/*compatibilidad con safari*/
+
+	animation-duration: 1.5s;/*duración de la animación*/
+	-webkit-animation-duration: 1.5s;/*compatibilidad con safari*/
+
+	animation-iteration-count: infinite;/*las veces que se repite*/
+	-webkit-animation-iteration-count: infinite;/*compatibilidad con safari*/
+}
+
+/*parámteros de animación tossing*/
+.tossing{
+	animation-name: tossing;/*aplicamos al animacion*/
+	-webkit-animation-name: tossing;/*compatibilidad con safari*/
+
+	animation-duration: 2.5s;/*duración de la animación*/
+	-webkit-animation-duration: 2.5s;/*compatibilidad con safari*/
+
+	animation-iteration-count: infinite;/*las veces que se repite*/
+	-webkit-animation-iteration-count: infinite;/*compatibilidad con safari*/
+}

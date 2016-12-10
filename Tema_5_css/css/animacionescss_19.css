@@ -1,0 +1,312 @@
+/* Ejemplos de animaciones*/
+/*
+En este fichero estan programadas las distintas animaciones
+Se describe que es lo que hacen y sirve a moso de lista.
+*/
+
+/*Esta animación cambia el color del original al que hemos programado*/
+@keyframes cambiacolor {
+    to {background-color: #58FA58;}
+}
+/*Esta animación cambia el color de la letra inicial a azul*/
+@keyframes cambiacolorletra {
+    to {color: #0040FF;}
+}
+/*esta animación desplaza letras desde la derecha exterior a la izquierda*/
+@keyframes deslizapalabras {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*gira un objeto 360 grados desde un eje*/
+@-webkit-keyframes rotacion3d {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+/*
+El objeto da la sensación de estar palpitando
+*/
+/*realizamos una secuencia de tres transformaciones de scale*/
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;
+	}
+}
+
+/*
+El objeto da la sensación de estar flotando
+*/
+/*realizamos una secuencia de tres transformaciones de translate desde abajo*/
+@keyframes floating {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);
+	}
+	50% {
+		-webkit-transform: translateY(8%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
+
+/*
+El objeto da la sensación de estar balanceandose
+*/
+/*realizamos una secuencia de tres transformaciones de rotación*/
+@keyframes tossing {
+	0% {
+		transform: rotate(-6deg);
+	}
+	50% {
+		transform: rotate(6deg);
+	}
+	100% {
+		transform: rotate(-6deg);
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-6deg);
+	}
+	50% {
+		-webkit-transform: rotate(6deg);
+	}
+	100% {
+		-webkit-transform: rotate(-6deg);
+	}
+}
+
+
+/*Realizamos secuencias de transformación de scale solo desde Y dando sensación de rebote*/
+@keyframes pullDown {
+	0% {
+    transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes pullDown {
+	0% {
+		-webkit-transform: scaleY(0.1);
+
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}
+}
+
+/*Realizamos secuencias de transformación de scale solo desde X dando sensación de rebote*/
+@keyframes stretchLeft {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes stretchLeft {
+	0% {
+		-webkit-transform: scaleX(0.3);
+	}
+	40% {
+		-webkit-transform: scaleX(1.02);
+	}
+	60% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(1);
+	}
+}
+
+/*Realizamos secuencias de transformación de scale solo desde X dando sensación de rebote*/
+@keyframes stretchRight {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes stretchRight {
+	0% {
+		-webkit-transform: scaleX(0.3);
+	}
+	40% {
+		-webkit-transform: scaleX(1.02);
+	}
+	60% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(1);
+	}
+}
+
+/*Utilizamos transformaciones de translate de X, desde fuera del body hasta su posición dando sensación de rebote*/
+@keyframes slideLeft {
+	0% {
+		transform: translateX(800%);
+	}
+	50%{
+		transform: translateX(-8%);
+	}
+	65%{
+		transform: translateX(4%);
+	}
+	80%{
+		transform: translateX(-4%);
+	}
+	95%{
+		transform: translateX(10%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+/*compatibilidad con safari*/
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(800%);
+	}
+	50%{
+		-webkit-transform: translateX(-8%);
+	}
+	65%{
+		-webkit-transform: translateX(4%);
+	}
+	80%{
+		-webkit-transform: translateX(-4%);
+	}
+	95%{
+		-webkit-transform: translateX(10%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
