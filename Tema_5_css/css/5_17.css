@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+header{
+    margin: 20px;
+    background-color: #f3f3f3;
+    border: 1px #777 solid;
+    text-align: justify;
+    width: 90%;
+    padding: 20px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+section{
+  margin: 30px;
+  border: 2px #A4A4A4 solid;
+  padding: 10px;
+  width: 90%;
+}
+
+body{
+  font-family: Courier,Verdana, Sans-serif;
+}
+
+header h1.title-header{
+  color:#013ADF;
+  text-shadow:27px 16px 3px #5374c9;
+  font-family: 'Indie Flower', cursive;
+  font-size: 150%;
+}
+
+header p{
+  font-family: 'Indie Flower', cursive;
+  font-size: 150%;
+}
+
+/*transformaciones*/
+.normal{
+  width: 100px; height: 100px;
+}
+.translate{
+  width: 100px; height: 100px;
+  transform: translate(300px,30px);
+}
+
+.scale{
+  width: 100px; height: 100px;
+  transform:scale(0.5,1);
+}
+.scale_horizontal{
+  width: 100px; height: 100px;
+  transform:scaleX(2);
+}
+
+.rotate{
+  width: 100px; height: 100px;
+  transform:rotate(170deg)
+}
+
+.skew{
+  width: 100px; height: 100px;
+  transform:skew(40deg,40deg);
+}
+
+.button {
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;}
+.button2 {background-color: #008CBA;}
+.button3 {background-color: #f44336;}
+
+.button1:hover{
+  transform: scale(1.1) rotate(3deg) translateY(20px);
+}
+.button2:hover{
+  transform: scale(2,2) rotate(3deg) translateX(100px);
+}
+.button3:hover{
+  transform: scale(5) rotate(40deg) translateX(2px) skew(40deg,40deg);
+}
