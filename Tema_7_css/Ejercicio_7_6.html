@@ -7,23 +7,41 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css">
 
 </head>
 
 <body>
-    <header>
+    <header id="principal">
         <h1 class="title-header">Ejercicio 7-6 Grid-picture</h1>
         <p>Implementa el ejercicio 7.4 (Ejercicio Torzai) de forma que las imágenes se adapten al tamaño de la pantalla utilizando el elemento picture, como mínimo 3 tamaños.
         </p>
     </header>
-    <section class="one">
-    </section>
-    <section class="two">
-    </section>
-    <section class="three">
-    </section>
-    <section class="four">
-    </section>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="column third">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/html5.png">
+                    <source media="(min-width: 560px)" srcset="img/html5-medium.png">
+                    <img src="img/html5-small.png" alt="html5 image">
+                </picture>
+            </div>
+            <div class="column third">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/css3.png">
+                    <source media="(min-width: 560px)" srcset="img/css3-medium.png">
+                    <img src="img/css3-small.png" alt="css3 image">
+                </picture>
+            </div>
+            <div class="column third">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/javascript.jpg">
+                    <source media="(min-width: 560px)" srcset="img/javascript-medium.jpg">
+                    <img src="img/javascript-small.jpg" alt="javascriptimage">
+                </picture>
+            </div>
+        </div>
+    </div>
 
 </body>
 
