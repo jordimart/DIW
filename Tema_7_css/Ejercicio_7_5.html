@@ -9,20 +9,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
+<style>
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
 
 <body>
     <header>
         <h1 class="title-header">Ejercicio 7-5 RDW-picture</h1>
         <p>Utilizando el elemento picture y las imágenes proporcionadas realiza un ejemplo donde se observe el uso de las diferentes imágenes para adaptarse a 3 temaños de pantalla.</p>
     </header>
-    <section class="one">
-    </section>
-    <section class="two">
-    </section>
-    <section class="three">
-    </section>
-    <section class="four">
-    </section>
+    <picture>
+        <source media="(min-width: 650px)" srcset="img/kitten-large.png">
+        <source media="(min-width: 465px)" srcset="img/kitten-medium.png">
+        <img src="img/kitten-small.png" alt="a cute kitten">
+    </picture>
 
 </body>
 
