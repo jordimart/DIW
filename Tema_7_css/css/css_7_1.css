@@ -1,0 +1,125 @@
+
+
+/* Estilo general */
+body {
+  padding: 0;
+  background-color: gray;
+  font: .8em Verdana, Arial, Helvetica, sans-serif;
+}
+body, h1, h2, p {
+  margin: 0;
+}
+div#contenedor{
+  width: 940px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+/* El encabezado */
+header#arriba {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
+}
+header#arriba h1, header#arriba h2 {
+  color: white;
+}
+/* El menú de navegación */
+nav#menu-navegacion {
+  margin: 0 0 10px 0;
+  padding: 5px;
+  background-color: silver;
+  border-radius: 10px;
+}
+nav#menu-navegacion p {
+  color: white;
+}
+nav#menu-navegacion a {
+  text-decoration: none;
+  color: white;
+}
+
+/* El contenido principal */
+section#contenido{
+  float: left;
+  width: 720px;
+  padding: 5px;
+}
+article {
+  margin: 0 0 20px 0;
+  border-top: 2px solid silver;
+}
+/* La columna lateral */
+aside#sidebar {
+    float: left;
+    width: 190px;
+    margin: 0 0 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #E8E8E8;
+}
+aside#sidebar p {
+  text-align: center;
+}
+/* El pie de página */
+footer#piedepagina {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #E8E8E8;
+  clear: both;
+}
+footer#piedepagina p {
+  text-align: center;
+  font-size: .75em;
+}
+
+img#diseno{
+  width: 180px;
+  height: 100px;
+}
+
+/*Adaptación mediaquery para ipad*/
+/*Las propiedades cambiaran cuando la resolución sea la indicada o menor*/
+@media screen and (max-width: 768px) {
+
+     /*pintamos el fondo blanco*/
+      body {
+        background-color: #fff;
+      }
+
+      /* ocupará todo el ancho desu elemento padre el body*/
+      div#contenedor{
+      width: 100%;
+      margin: 0;
+      }
+
+      /*El color de fondo del banner seŕa negro y las letras blancas*/
+      header#arriba{
+      background-color: #000;
+      color: #fff;
+      }
+
+      /*los dos contenedores ya no serán flotantes para ganar espacio*/
+      section#contenido{
+        float: none;
+        width: auto;
+      }
+      aside#sidebar {
+        float: none;
+        width: auto;
+        margin: 0 0 10px 0;
+      }
+
+      /*Ocultaos laimagne para ganar espacio y mostrar solo lainformación*/
+      aside#sidebar img {
+        display: none;
+      }
+
+      /*Adaptamos el tamaño de los titulos de los artículos*/
+      article h1 {
+        font-size: 1.5em;
+      }
+
+}
