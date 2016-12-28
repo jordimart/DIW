@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Ejercicio_5_17_css">
+    <meta name="author" content="Jorge Martínez Frias">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
+    <title>Ejercicio 5_17_transformaciones_en_css</title>
+    <link rel="stylesheet" type="text/css" href="css/5_18.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title-header">Ejercicio 5_17 transformaciones en css</h1>
+        <p>Realiza algunos ejemplos sobre transformaciones utilizando diferentes opciones. </p>
+    </header>
+    <h1>Ejemplo de Login Findmenu </h1>
+    <!--Contine una imagen de fondo-->
+    <section id="content" class="login">
+        <div class="details-holder">
+            <div class="modal-header">
+                <h1>LOG IN</h1>
+            </div>
+            <div class="modal-body">
+                <form id="login_form" name="login_form">
+                    <div>
+                        <input class="text" type="text" id="inputUser" name="inputUser" placeholder="Email">
+                    </div>
+                    <div>
+                        <input class="text" type="password" id="inputPass" name="inputPass" placeholder="Password">
+                    </div>
+
+                    <input class="btn-read-more" type="button" name="submitLog" id="submitLog" value="Send" />
+                </form>
+
+                <div id="social-signin">
+                    <ul class="icons">
+                        <li>
+                            <a href="#"><img src="img/fbsig.png" alt="Login facebook" class="social-icon" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twsig.png" alt="Login facebook" class="social-icon" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/googlesig.png" alt="Login facebook" class="social-icon" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="contact-reg">
+                    <h2><a href="https://findmenu.tk/users/signup/" id="linkReg">Regístrate</a></h2>
+                    <h2><a href="https://findmenu.tk/users/restore/" id="linkRest">¿Has olvidado tu contraseña?</a></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <h1>Ejemplo de Contact Findmenu </h1>
+    <!--Contine una imagen de fondo-->
+    <section id="content" class="contact">
+        <form id="contact_form" name="contact_form" class="details-holder">
+            <div class="modal-header">
+                <h1><C>CONTACT US</C></h1>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input class="text" type="text" id="inputName" name="inputName" placeholder="Name" class="input-block-level" dir="auto" maxlength="100">
+                </div>
+                <div>
+                    <input class="text" type="text" id="inputEmail" name="inputEmail" placeholder="Email *" class="input-block-level" maxlength="100">
+                </div>
+                <div>
+                    <label class="subject" for="sel1">Subject:</label>
+                    <select class="select" id="inputSubject" name="inputSubject" title="Choose subject">
+                <option value="compra">Info relativa a tu compra</option>
+                <option value="evento">Celebra un evento con nosotros</option>
+                <option value="programacion">Contacta con nuestro dpto de programación</option>
+                <option value="Trabaja">Trabaja con nosotros</option>
+                <option value="proyectos">Deseas proponernos proyectos</option>
+                <option value="sugerencias">Haznos sugerencias</option>
+                <option value="reclamaciones">Atendemos tus reclamaciones</option>
+                <option value="club">Club FindMenu</option>
+                <option value="sociales">Proyectos sociales</option>
+                <option value="novedades">Te avisamos de nuestras novedades</option>
+                <option value="diferente">Algo diferente</option>
+            </select>
+                </div>
+                <div>
+                    <textarea class="text" rows="4" name="inputMessage" placeholder="Message *" style="max-width: 100%;" dir="auto"></textarea>
+                </div>
+                <input class="btn-read-more" type="submit" name="submit" id="submitBtn" disabled="disabled" value="send" />
+            </div>
+        </form>
+    </section>
+    <!-- /container -->
+</body>
+
+</html>
+
+</html>

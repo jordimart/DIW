@@ -112,7 +112,7 @@ img#diseno{
         margin: 0 0 10px 0;
       }
 
-      /*Ocultaos laimagne para ganar espacio y mostrar solo lainformación*/
+      /*Ocultaos laimagne para ganar espacio y mostrar solo la información*/
       aside#sidebar img {
         display: none;
       }
