@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Ejercicio_9_1_svg">
+    <meta name="author" content="Jorge Martínez Frias">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
+    <title>Ejercicio 9_1_svg</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title-header">Ejercicio 9.1 gráficos svg</h1>
+        <p>Realiza 8 o 9 ejemplos de gráficos SVG, puedes utilizar el tutorial de w3school.com </p>
+    </header>
+
+    <section id="ejemplo-1">
+        <h2>Crear una línea irregular</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version='1.1'>
+        <polyline points="20,20 40,25 60,40 80,120 120,140 200,180"
+         style="fill:white;stroke:red;stroke-width:3"/>
+        </svg>
+
+    </section>
+
+    <section id="ejemplo-2">
+        <h2>Un texto que se mueve</h2>
+
+        <svg width="600" height="600">
+        <g transform="translate(100,100)">
+        <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:24; visibility:hidden"> It's SVG!
+        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+        <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" />
+        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" />
+        </text>
+        </g>
+        Sorry, your browser does not support inline SVG.
+        </svg>
+
+    </section>
+
+    <section id="ejemplo-4">
+        <h2>Crear un triángulo usando el elemento path</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path d="M150 0 L75 200 L225 200 Z" style="fill:red"/>
+        </svg>
+    </section>
+
+    <section id="ejemplo-5">
+        <h2>Una curva cuadrática de Beizer</h2>
+
+        <svg height="400" width="450">
+        <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+        <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
+        <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
+        <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+        <!-- Mark relevant points -->
+        <g stroke="black" stroke-width="3" fill="black">
+        <circle id="pointA" cx="100" cy="350" r="3" />
+        <circle id="pointB" cx="250" cy="50" r="3" />
+        <circle id="pointC" cx="400" cy="350" r="3" />
+        </g>
+        <!-- Label the points -->
+        <g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+        <text x="100" y="350" dx="-30">A</text>
+        <text x="250" y="50" dy="-10">B</text>
+        <text x="400" y="350" dx="30">C</text>
+        </g>
+        Sorry, your browser does not support inline SVG.
+        </svg>
+    </section>
+
+    <section id="ejemplo-6">
+        <h2>Crear un efecto de sombra proyectada para un rectángulo</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+                   <filter id="f1" x="0" y="0"
+                             width="200%" height="200%">
+                         <feOffset result="offOut" in="SourceAlpha"
+                              dx="20" dy="20"/>
+                         <feGaussianBlur result="blurOut"
+                               in="offOut" stdDeviation="10"/>
+                         <feBlend in="SourceGraphic"
+                                in2="blurOut" mode="normal"/>
+                    </filter>
+         </defs>
+          <rect width="90" height="90" stroke="green"
+                   stroke-width="3" fill="yellow" filter="url(#f1)"/>
+</svg>
+    </section>
+
+    <section id="ejemplo-7">
+        <h2>Rectangulo que se desvanece</h2>
+
+        <svg width="400" height="400">
+        <rect x="20" y="20" width="250" height="250" style="fill:blue">
+        <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+        </rect>
+        Sorry, your browser does not support inline SVG.
+        </svg>
+    </section>
+
+    <section id="ejemplo-8">
+        <h2>Crear una elipse con gradiente radial</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <defs>
+                     <radialGradient id="grad1" cx="50%" cy="50%"
+                            r="50%" fx="50%" fy="50%">
+                     <stop offset="0%"
+                            style="stop-color:rgb(255,255,255);stop-opacity:0"/>
+                     <stop offset="100%"
+                            style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+                     </radialGradient>
+             </defs>
+             <ellipse cx="200" cy="70" rx="85" ry="55"
+                     fill="url(#grad1)"/>
+        </svg>
+    </section>
+
+    <section id="ejemplo-9">
+        <h2>Crear texto en una ruta arqueada</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+                  <path id="path1" d="M75,20 a1,1 0 0,0 100,0"/>
+        </defs>
+        <text x="10" y="100" style="fill:red;">
+                   <textPath xlink:href="#path1">Jordimart 2017 2º DAW</textPath>
+         </text>
+        </svg>
+    </section>
+
+    <section id="ejemplo-10">
+        <h2>Crear texto con un filtro y un gradiente</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%"
+                           r="50%" fx="50%" fy="50%">
+                           <stop offset="0%"
+                                style="stop-color:red; stop-opacity:0"/>
+                           <stop offset="100%"
+                               style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+                    </radialGradient>
+                    <filter id="f1" x="0" y="0"
+                               width="200%" height="200%">
+                           <feOffset result="offOut"
+                               in="SourceAlpha" dx="20" dy="20"/>
+                           <feGaussianBlur result="blurOut"
+                               in="offOut" stdDeviation="10"/>
+                           <feBlend in="SourceGraphic"
+                               in2="blurOut" mode="normal"/>
+                    </filter>
+          </defs>
+          <text x="10" y="100" style="fill:url(#grad1); font-size: 30px;"
+                        filter="url(#f1)">
+                        Jordimart 2017 2º DAW
+          </text>
+          </svg>
+    </section>
+
+</body>
+
+</html>
