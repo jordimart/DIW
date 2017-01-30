@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Ejercicio_10-1-bootstrap-grids">
+    <meta name="author" content="Jorge Martínez Frias">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Ejercicio 10_1-bootstrap-grids</title>
+
+</head>
+
+<body>
+
+
+
+    <p>
+        <h2>Implementa los 5 ejemplos "Grid" de Bootstrap disponibles en la documentación. </h2></p>
+    <p>
+        <h1>Introducción</h1></p>
+    <div class="container">
+        <h2><strong>Ejemplo 1: </strong>Stacked-to-horizontal</h2>
+        <div class="row">
+            <div class="col-md-1">.col-md-1</div>
+            <div class=" col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-8 ">.col-md-8</div>
+            <div class="col-md-4 ">.col-md-4</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-4 ">.col-md-4</div>
+            <div class="col-md-4 ">.col-md-4</div>
+            <div class="col-md-4 ">.col-md-4</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 ">.col-md-6</div>
+            <div class="col-md-6 ">.col-md-6</div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2><strong>Ejemplo 2: </strong>Stacked-to-horizontal container fluid</h2>
+        <div class="row">
+            <div class="col-md-1">.col-md-1</div>
+            <div class=" col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+            <div class="col-md-1 ">.col-md-1</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-8 ">.col-md-8</div>
+            <div class="col-md-4 ">.col-md-4</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-4 ">.col-md-4</div>
+            <div class="col-md-4 ">.col-md-4</div>
+            <div class="col-md-4 ">.col-md-4</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 ">.col-md-6</div>
+            <div class="col-md-6 ">.col-md-6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2><strong>Ejemplo 3: </strong>Mobile and desktop</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2><strong>Ejemplo 4: </strong>Mobile, tablet, desktop</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2><strong>Ejemplo 5: </strong>Column wrapping</h2>
+        <div class="row">
+            <div class="col-xs-9">.col-xs-9</div>
+            <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+            <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+        </div>
+    </div>
+</body>
+
+</html>

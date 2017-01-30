@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Ejercicio_10-1-bootstrap">
+    <meta name="author" content="Jorge Martínez Frias">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Con esto garantizamos que se vea bien en dispositivos móviles-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--Llamamos al archivo CSS a través de CDN -->
+    <title>Ejercicio 10_1-bootstrap</title>
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Jordimart bootstrap basic</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <h1>¡Hola mundo!</h1>
+        <p>
+            <h2> Ejemplo simple de mi primera web con bootstrap</h2></p>
+        <p>
+            <h1>Introducción</h1></p>
+        <p>En este ejercicio he probado algunos elementos que me ofrece bootstrap, para ver que cosas me aporta a la hora de diseñar una web, he podido observar como lo que mas me facilita es en el tema de la colocación de los elementos, en algunos casos
+            también aplicacolores si utilizamos etiquetas de bootstrap.</p>
+        <p>Los ejemplos los he cogido de la siguiente url: http://getbootstrap.com/components/#top</p>
+        <h2><strong>Ejemplo 1: </strong>Esto es un ejemplo de labels creadas con bootstrap y su colocación en línea</h2>
+
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+
+        <h2><strong>Ejemplo 2: </strong>Esto es un ejemplo de tipos de mensajes de información</h2>
+
+        <div class="alert alert-success" role="alert">
+            <a href="#" class="alert-link">Su registro se es correcto</a>
+        </div>
+        <div class="alert alert-info" role="alert">
+            <a href="#" class="alert-link">Info: Todos los campos son requeridos</a>
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <a href="#" class="alert-link">Cuidado, tienen algun campo sin completar</a>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <a href="#" class="alert-link">Error en el registro</a>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <div class="container">
+            <h2><strong>Ejemplo 3: </strong>Ejemplo de footer con bootstrap, faltaría css para mejorar el el diseño</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footerleft ">
+                    <div class="logofooter"> Logo</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    <p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA</p>
+                    <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
+                    <p><i class="fa fa-envelope"></i> E-mail : info@webenlance.com</p>
+
+                </div>
+                <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                    <h6 class="heading7">GENERAL LINKS</h6>
+                    <ul class="footer-ul">
+                        <li><a href="#"> Career</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Terms & Conditions</a></li>
+                        <li><a href="#"> Client Gateway</a></li>
+                        <li><a href="#"> Ranking</a></li>
+                        <li><a href="#"> Case Studies</a></li>
+                        <li><a href="#"> Frequently Ask Questions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                    <h6 class="heading7">LATEST POST</h6>
+                    <div class="post">
+                        <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                        <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                        <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--Importante llamar antes a jQuery para que funcione bootstrap.min.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--Llamamos al JavaScript  a través de CDN-->
+
+</body>
+
+</html>
