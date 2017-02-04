@@ -2,20 +2,58 @@
 <html>
 
 <head>
-    <meta name="description" content="Ejercicio_10-1-bootstrap">
+    <meta name="description" content="Ejercicio_10-5-bootstrap-formularios-botones">
     <meta name="author" content="Jorge Martínez Frias">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
-    <title>Ejercicio 10_1-bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Ejercicio 10_5-bootstrap-formularios-botones</title>
 
 </head>
 
 <body>
 
     <header>
-
+        <div class="jumbotron">
+            <h1>Ejercicio 10.5 bootstrap formularios y botones</h1>
+            <p>Implementa un documento HTML con 6 elementos/clases de Bootstrap relacionada con los formularios. Añade también 6 elementos/clases de Bootstrap para la gestión de los botones </p>
+        </div>
     </header>
+    <section class="panel panel-primary container">
+        <h2 class="bg-primary">Ejemplo 1: Formas en las imagenes</h2>
+        <p>Utilizamos clases de bootstrap para dar forma a las fotos </p>
+
+        <div class="row">
+            <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                <ul>
+                    <li>
+                        <img src="img/screenshot.png" class="img-rounded" alt="Jordimart" width="304" height="236">
+                    </li>
+                    <li>
+                        <img src="img/screenshot.png" class="img-circle" alt="Jordimart" width="304" height="236">
+                    </li>
+                    <li>
+                        <img src="img/screenshot.png" class="img-thumbnail" alt="Jordimart" width="304" height="236">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel panel-primary container">
+        <h2 class="bg-primary">Ejemplo 2: Imagen responsive</h2>
+        <p>Utilizamos bootstrap para hacer una imagen responsive con una simple clase img-responsive </p>
+        <img class="img-responsive" src="img/screenshot.png" alt="Jordimart">
+    </section>
 
 
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!--Importante llamar antes a jQuery para que funcione bootstrap.min.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Llamamos al JavaScript  a través de CDN-->
 </body>
 
 </html>
