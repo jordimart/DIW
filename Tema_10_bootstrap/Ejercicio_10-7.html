@@ -2,20 +2,125 @@
 <html>
 
 <head>
-    <meta name="description" content="Ejercicio_10-1-bootstrap">
+    <meta name="description" content="Ejercicio_10-7-bootstrap-utilidades-responsive">
     <meta name="author" content="Jorge Martínez Frias">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 / ISO-8859-1;">
-    <title>Ejercicio 10_1-bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Ejercicio 10_7-bootstrap-utilidades-responsive</title>
 
 </head>
 
 <body>
 
     <header>
-
+        <div class="jumbotron">
+            <h1>Ejercicio 10.7 bootstrap utilidades responsive</h1>
+            <p>Implementa un documento HTML con 4 clases de Bootstrap relacionadas con las utilidades Responsive. </p>
+        </div>
     </header>
 
 
+    <div class="container">
+
+        <div class="row">
+
+            <h2>Ejemplo visible: Responsive Utilities</h2>
+            <h3>En este ejemplo utilizamos cuatro tipos laclase visible para hacer que dependiendo del tamaño de la pantalla se muestre el contenido, en este caso aplicamos cuatro tipos de medidas que nos ofrece bootstrap "lg", "md","sm","xs"</h3>
+
+            <div class="visible-lg">
+                <img src="http://i.imgur.com/FDAc22P.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-danger">
+                    Large devices Desktops (≥1200px)
+                </p>
+            </div>
+
+            <div class="visible-md">
+                <img src="http://i.imgur.com/vlC1miF.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-warning">
+                    Medium devices Desktops (≥992px)
+                </p>
+            </div>
+
+            <div class="visible-sm">
+                <img src="http://i.imgur.com/W9OwmLT.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-info">
+                    Small devices Tablets ( (≥768px))
+                </p>
+            </div>
+
+            <div class="visible-xs">
+                <img src="http://i.imgur.com/8UTzF72.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-success">
+                    Extra small devices Phones (
+                    <768px) </p>
+            </div>
+
+            <br><br>
+
+            <p class="lead">
+                Redimensiona el navegador para ver como actuan las clases responsive.
+            </p>
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <div class="row">
+
+            <h2>Ejemplo hidden: Responsive Utilities</h2>
+            <h3>Tenemos 4 fotos de diferentes tamaños, si redimensionamos la pantalla se iran ocultando hasta mostrar solo la mas pequeña</h3>
+
+            <div class="hidden-md hidden-sm hidden-xs">
+                <img src="img/imagen_large.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-danger">
+                    Se vera en resolución (≥1200px)
+                </p>
+            </div>
+
+            <div class="hidden-sm hidden-xs">
+                <img src="img/imagen_medium.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-warning">
+                    Se vera en resolución (≥992px)
+                </p>
+            </div>
+
+            <div class="hidden-xs">
+                <img src="img/imagen_small.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-info">
+                    Se vera en resolución ( (≥768px))
+                </p>
+            </div>
+
+            <div>
+                <img src="img/imagen_mini.jpg" alt="" class="img-responsive img-rounded center-block">
+                <p class="text-center btn-success">
+                    Se vera en resolución (
+                    <768px) </p>
+            </div>
+
+            <br><br>
+
+            <p class="lead">
+                Redimensiona el navegador para ver como actuan las clases responsive.
+            </p>
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!--Importante llamar antes a jQuery para que funcione bootstrap.min.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Llamamos al JavaScript  a través de CDN-->
 </body>
 
 </html>
